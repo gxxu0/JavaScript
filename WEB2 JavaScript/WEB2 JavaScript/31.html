@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers = {
+            "programmer": "gxxu0",
+            "designer": "leezche"
+        };
+        document.write("programmer : " + coworkers.programmer + "<br>"); //. <- object access operator : 객체에 접근하는 operator
+        document.write("designer : " + coworkers.designer + "<br>");
+        coworkers.bookkeeper = "duru"; //데이터 추가
+        document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+        coworkers["data scientist"] = "taeho";
+        document.write("data scientist : " + coworkers["data scientist"]);
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for (var key in coworkers) {
+            //var key in 객체이름
+            //key --> 정보의 열쇠(정보에 대한 이름)
+            //cowokers의 수 만큼 key값 하나하나 변수값으로 세팅
+            document.write(key + '<br>');
+            document.write(coworkers[key] + '<br>');
+            document.write(key + ' : ' + coworkers[key] + '<br>');
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers = {
+            "programmer": "gxxu0",
+            "designer": "leezche"
+        };
+        document.write("programmer : " + coworkers.programmer + "<br>"); //. <- object access operator : 객체에 접근하는 operator
+        document.write("designer : " + coworkers.designer + "<br>");
+        coworkers.bookkeeper = "duru"; //데이터 추가
+        document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+        coworkers["data scientist"] = "taeho";
+        document.write("data scientist : " + coworkers["data scientist"]);
+    </script>
+</body>
+
+</html>
