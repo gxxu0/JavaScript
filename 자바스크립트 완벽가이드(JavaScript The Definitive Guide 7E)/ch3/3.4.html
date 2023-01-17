@@ -1,0 +1,18 @@
+<!--
+`\n`.length
+1
+String.raw`\n`.length
+2
+function plus(x){ return x+x; }
+console.log(plus`2`);
+VM282:2 22
+undefined
+function plus(x){ return x+x; }
+console.log(plus`${2}`);
+VM311:2 ,,
+undefined
+function plus(x){ return x+1; }
+console.log(plus`2`);
+VM336:2 21
+
+-->
