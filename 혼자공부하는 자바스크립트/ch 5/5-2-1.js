@@ -4,6 +4,6 @@ function callThreeTimes(callback) {
   }
 }
 function print(i) {
-  console.log(`${i}번째 함수 호출`);
+  console.log(`${i}번째 호출`);
 }
 callThreeTimes(print);
